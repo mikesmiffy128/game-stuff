@@ -1,0 +1,17 @@
+xhair: a trivial crosshair replacement for DirectX games with bad/no built in
+crosshairs. I threw it together for use with L4D2 and also occasionally use it
+for Killing Floor. Apparently a lot of L4D2 players do some dumb thing with
+Mumble's overlay; that seems awfully complicated when you can just use a
+standalone program, hence this standalone program.
+
+Note: this works with any fullscreen DirectX game but probably does not work
+with OpenGL games because they take a short-circuit path through Windows'
+compositor which prevents anything from drawing on top.
+
+Customisation: the config.cs file can be edited to tweak the appearance of the
+thing, similar to a Suckless config.h. Of course it's not fully in the spirit of
+Suckless since it's written in C# and runs on Windows - I just didn't feel like
+implementing a config parser.
+
+Compiling: you need the SDK for .NET 4.6.1, then just run build.bat. If that
+doesn't work, don't ask me, I dunno.
